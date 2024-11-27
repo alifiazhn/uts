@@ -1,0 +1,287 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+/* logo dan navigasi */
+nav {
+  z-index: 100;
+  color: brown;
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: beige;
+}
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 60px;
+  text-align: center;
+  font-size: 25px;
+  font-family: lucida handwriting, cursive;
+}
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+nav ul li a {
+  color: brown;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+header .intro {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3 {
+  color: whitesmoke;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-family: georgia, serif;
+}
+header .intro p {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-top: 12px;
+  padding: 0;
+  font-family: garamond, serif;
+}
+.tombol {
+  background-color: burlywood;
+  height: 40px;
+  line-height: 42px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 20%;
+  z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+section {
+  padding: 50px 0px 50px 0px;
+}
+section h3 {
+  font-size: 40px;
+  font-family: lucida console, monospace;
+  color: brown;
+}
+section h3::after {
+  content: "";
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+
+#aboutus,
+#gallery,
+#highlight,
+#contact,
+#more {
+  text-align: center;
+}
+section .konten-isi p {
+  font-style: 21px;
+}
+
+.hl,
+.mr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.hl h6 a:link, a:active, a:visited{
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 19px;
+  font-weight: bold;
+  color: brown;
+  text-decoration: none;
+}
+.hl h6 a:hover{
+  color: brown;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.hl div {
+  text-align: center;
+  width: 30%;
+  border-bottom: 2px solid lightgrey;
+}
+
+section#gallery {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+section#gallery div {
+  padding: 10px;
+}
+section#gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+section.quote {
+  background: url("/latihan/images/candi.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+}
+section.quote .layar-dalam p {
+  display: inline;
+  background: url("/latihan/images/p4.webp") no-repeat;
+  padding: 40px;
+}
+.hl img {
+  width: 100%;
+  box-shadow: 0px -10px 30px lightgrey;
+  border-radius: 5px;
+}
+.mr .area {
+  width: 47%;
+  box-shadow: 0px -10px 30px lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mr div.area div {
+  width: 50%;
+}
+.mr .area .gambar {
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.mr .area .text article{
+  padding: 40px;
+  margin: 0px;
+  color: black;
+  text-decoration: none;
+}
+.text article h4 a:active,a:visited,a:link{
+  color: brown;
+  text-decoration: none;
+}
+.text article h4 a:hover{
+  color: brown;
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  background-color: beige;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  color: brown;
+  font-family: helvetica, sans-serif;
+}
+footer a:link,a:active,a:visited, a:hover{
+  background-color: beige;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  color: brown;
+  font-family: helvetica, sans-serif;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991.98px) {
+  .layar-dalam {
+    width: 90%;
+  }
